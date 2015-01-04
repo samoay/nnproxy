@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /**
  * Created by samoay on 1/4/15.
  */
@@ -9,11 +11,16 @@ var http = require('http'),
 
 
 program
-    .version('0.0.1')
+    .version('0.0.2')
     .option('-p, --port <n>', 'Listening port')
     .option('-c, --config <string>', 'Specify your own config file, default is proxy.json')
     .option('-g, --group <string>', 'Choose a group in your proxy.json config, default group is default')
     .parse(process.argv);
+
+//
+// Decide server port
+//
+var port = program.port || 80;
 
 //
 // Read config file content
@@ -92,5 +99,5 @@ var server = http.createServer(function(req, res) {
     }
 });
 
-server.listen(8080);
-console.log("proxy server listening on port 8080");
+server.listen(port);
+console.log("proxy server listening on port "+port);

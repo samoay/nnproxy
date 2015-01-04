@@ -1,6 +1,6 @@
 {
   "name": "nnproxy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A node base proxy server like nginx location",
   "main": "index.js",
   "scripts": {
