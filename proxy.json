@@ -1,0 +1,29 @@
+{
+    "default": {
+        "/google": {
+            "target": "http://www.google.com",
+            "headers": [
+                ["X-Proxy-By", "Node"]
+            ]
+        },
+
+        "/express": {
+            "target": "http://127.0.0.1:3000",
+            "headers": []
+        }
+    },
+
+    "develop": {
+        "/google": {
+            "target": "http://www.google.com.hk",
+            "headers": [
+                ["X-Proxy-By", "Node"]
+            ]
+        },
+
+        "/express": {
+            "target": "http://127.0.0.1:3001",
+            "headers": []
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "node-proxy",
+  "version": "0.0.1",
+  "description": "A proxy server based on node for replacing nginx location feature",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.alibaba-inc.com:yize/proxy-nwux.git"
+  },
+  "author": "samoay@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "http-proxy": "~1.8.1",
+    "commander": "~2.6.0"
+  },
+  "keywords": [
+    "proxy",
+    "nginx",
+    "location"
+  ]
+}
