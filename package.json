@@ -1,6 +1,6 @@
 {
   "name": "nnproxy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A node base proxy server like nginx location",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/samoay/nnproxy",
   "bin": {
-    "nnproxy": "nnp.js"
+    "nnp": "./bin/nnp.js"
   },
   "devDependencies": {}
 }
